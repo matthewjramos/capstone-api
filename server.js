@@ -8,6 +8,7 @@ const cors = require('cors')
 const app = express()
 
 // require route files
+const gameRoutes = require('./app/routes/game_routes')
 const exampleRoutes = require('./app/routes/example_routes')
 const userRoutes = require('./app/routes/user_routes')
 
@@ -71,6 +72,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 // register route files
 app.use(exampleRoutes)
 app.use(userRoutes)
+app.use(gameRoutes)
 
 // run API on designated port (4741 in this case)
 app.listen(port, () => {
