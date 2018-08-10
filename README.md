@@ -25,3 +25,13 @@ Javascript
 Problems encountered: 
 -Initially, was using the Phaser 3 game engine with Socket.io, but ran into compatibility issues
   -This led to a removal of multiplayer options
+
+Routes:
+
+  GET     /games
+  POST    /games
+  PATCH   /games/:id
+  DELETE  /games/:id
+      
+  
+
