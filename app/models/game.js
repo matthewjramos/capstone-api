@@ -7,7 +7,7 @@ const gameSchema = new mongoose.Schema({
   },
   description: {
     type: String,
-    required: false
+    required: true
   },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
